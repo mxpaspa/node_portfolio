@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html id="test" style="-webkit-overflow-scrolling: touch; overflow:scroll;">
+
+	<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="static/skrollr.min.js"></script> -->
+		<script src="/scroll.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119554747-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-119554747-1');
+		</script>
+
+
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text|IBM+Plex+Serif|Libre+Baskerville|Noto+Serif" rel="stylesheet">
+
+		<title></title>
+	</head>
+
+	<body id="main">
+		<div id="videoWrapper">
+			<canvas id="videoCanvas"></canvas>
+			<nav id="indicatorContainer">
+				<div id="indicator"></div>
+				<div id="navGroup" style="top:0%">
+					<span id="section1-0"></span>
+
+				</div>
+
+				<div id="navGroup" style="top:25%">
+					<span id="section2-136"></span>
+
+				</div>
+
+				<div id="navGroup" style="top:40%">
+					<span id="section3-218"></span>
+
+				</div>
+
+				<div id="navGroup" style="top:60%">
+					<span id="section4-327"></span>
+
+				</div>
+
+				<div id="navGroup" style="top:97%;">
+					<span id="section5-530"></span>
+
+				</div>
+			</nav>
+
+
+
+	    <section id="max" style="position:fixed; top:20%; left: 60%">
+				<div id="max1" class="section-inactive">I'm <em>Max</em></div>
+
+				<div id="max2" class="section-inactive" style="padding-left:10px">Here's a bit about me</div>
+	    </section>
+
+			<section id="business-analyst" style="position:fixed; top:30%; left: 50%">
+				<div id="business-analyst-1" class='section-inactive'>Currently a Business Analyst</div>
+				<div id="business-analyst-2" class='section-inactive' style="padding-left:10px">ConnectWise Control, Raleigh NC</div>
+				<div id="business-analyst-3" class='section-inactive' style="padding-left:20px">I'm part of a team that produces</div>
+				<div id="business-analyst-4" class='section-inactive'style="padding-left:15px"><em>extensions and integrations</em></div>
+	    </section>
+
+			<section id="mba" style="position:fixed; top:40%; left: 55%">
+				<div id="mba-1" class="section-inactive">I also have an <em>MBA</em></div>
+				<div id="mba-2" class="section-inactive">Appalachian State, International Business</div>
+				<div id="mba-3" class="section-inactive">While in MBA, <em>I learned about software...</em></div>
+	    </section>
+
+			<section id="dev" style="position:fixed; top:50%; left: 50%; width: 50%">
+				<div id="dev-1a" class="section-inactive">And started my first project:</div>
+				<div id="dev-1" class="section-inactive"><em>www.tunemuze.com</em></div>
+
+				<div style="position:absolute; width:100%; padding-top:20px">
+					<div id="dev-2a" class="section-inactive" style="padding-left:10px">A few others:</div>
+					<div id="dev-2" class="section-inactive" style="padding-left:15px"><em>iOS</em> contract work for Faro10</div>
+					<div id="dev-3" class="section-inactive" style="padding-left:15px">HTML parser in <em>Node.js</em></div>
+					<div id="dev-4" class="section-inactive" style="padding-left:15px">Feedly replica in C#</div>
+					<div id="dev-5" class="section-inactive" style="padding-left:15px">Tech talent south for <em>Ruby on Rails</em></div>
+					<div id="dev-6" class="section-inactive" style="padding-left:15px">Thnkful bootcamp for <em>Python</em></div>
+				</div>
+				<div id="dev-7" class="section-inactive" style="padding-left:15px; position:absolute; top: 30%;">
+					<a href="https://github.com/mxpaspa" target="_blank" style="text-decoration: none; color:white;z-index:10;">github.com/mxpaspa</a>
+					 |
+					<a href="mailto:maxpaspa@gmail.com" target="_blank" style="text-decoration: none; color:white;z-index:10;">mxpaspa@gmail.com</a>
+				</div>
+	    </section>
+
+			<div id="progress-spinner-prism">
+        <div class="prism-container">
+          <div class="prism">
+            <div class="shape">
+              <div class="side back"></div>
+              <div class="axis depth"></div>
+              <div class="axis height"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+
+		<div class="loader-wrapper">
+		  <div class="loader-outer">
+		    <div class="loader-inner"></div>
+		  </div>
+		</div>
+
+		<div id="scrollNull" style="width:1px; height:5000%; background:transparent; pointer-events:none;"></div>
+
+
+
+	</body>
+</html>
