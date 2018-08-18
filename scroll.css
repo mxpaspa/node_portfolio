@@ -139,6 +139,7 @@ em{
   font-size:30px;
   color: #ff6347;
   visibility: hidden;
+
 }
 .section-active {
   font-size:30px;
@@ -150,6 +151,7 @@ em{
   font-family: 'Noto Serif', serif;*/
   font-family: 'IBM Plex Serif', serif;
   z-index: 10;
+
 }
 
 #set-height {
