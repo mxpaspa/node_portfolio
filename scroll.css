@@ -80,13 +80,62 @@ em{
   border-color:rgba(64,64,64,0.5);
 }
 
+section.max {
+  position:fixed;
+  top:20%;
+  left: 60%
+}
+
+section.business-analyst{
+  position:fixed;
+  top:30%;
+  left: 50%
+}
+
+section.mba{
+  position:fixed;
+  top:40%;
+  left: 55%
+}
+
+section.dev{
+  position:fixed;
+  top:50%;
+  left: 50%;
+  width: 50%
+}
+
 @media only screen
-    and (device-width : 375px)
-    and (device-height : 667px)
+    and (min-width: 375px)
+    and (min-height : 667px)
     and (-webkit-device-pixel-ratio : 2) {
   #indicatorContainer #navGroup {
     height: 25px;
     width: 25px;
+  }
+
+  body section.max {
+    position:fixed;
+    top:35%;
+    left: 40%
+  }
+
+  body section.business-analyst{
+    position:fixed;
+    top:35%;
+    left: 40%
+  }
+
+  body section.mba{
+    position:fixed;
+    top:35%;
+    left: 40%
+  }
+
+  body section.dev{
+      position:fixed;
+      top:35%;
+      left: 40%
   }
 }
 
