@@ -32,11 +32,13 @@ window.onload = function() {
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
-
+            console.log("force scroll");
+            window.scroll(0,300);
           }
 
           setTimeout(createText, 300);
           // scrollDown();
+
 
         }
         // , 1000);
@@ -397,4 +399,3 @@ window.onload = function() {
 
   }
 }
-window.scroll(0,300);
