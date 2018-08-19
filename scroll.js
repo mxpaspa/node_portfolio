@@ -33,17 +33,8 @@ window.onload = function() {
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
           }
-          function one(){
+  
             setTimeout(createText, 300);
-          }
-          one();
-
-          function two(){
-            setTimeout(function(){
-              window.scroll(0,5000);
-            },3000)
-          }
-          two();
         }
         // , 1000);
       init(videoFrame);
