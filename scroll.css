@@ -116,46 +116,23 @@ section.dev{
   }
 
   #indicator{
-    background-color: #dccd9e;
-    width: 20px;
+    background-color: rgba(255,255,255,.1);
+    width: 18px;
+    z-index: 2;
   }
 
-  #indicatorContainer #navGroup >span {
-    width:20px;
-    height:20px;
+  #indicatorContainer #navGroup >span.inner {
+    width:8px;
+    height:8px;
   }
 
-  /*#indicatorContainer #navGroup .active {
-    position: absolute;
-    cursor: pointer;
-    background-color:rgba(64,64,64,0.5);
-    transform: scale(2,2);
-    transition: transform 200ms cubic-bezier(0, 0, 0.6, 1.6);
-  }*/
-
-  /*#indicatorContainer #navGroup .reverse {
-    position: absolute;
-    cursor: pointer;
-    background-color:rgba(64,64,64,0.5);
-    transform: scale(0.5,0.5);
-    transition:transform 0.3s ease-out;
-  }*/
-
-  /*#indicatorContainer #navGroup .last{
-    position: absolute;
-    cursor: pointer;
-    background-color:#212121;
-    transform: scale(2,2);
-    transition: transform 200ms cubic-bezier(0, 0, 0.6, 1.6);
-  }*/
-
-  /*#indicatorContainer #navGroup .last-reverse {
-    position: absolute;
-    cursor: pointer;
-    background-color:#212121;
-    transform: scale(0.5,0.5);
-    transition:transform 0.3s ease-out;
-  }*/
+  #scrollDown {
+    color: white;
+    font-size: 45px;
+    top: 10%;
+    left: 2%;
+    width: 30%;
+  }
 
   body {
     background-color: #454545
@@ -169,25 +146,25 @@ section.dev{
   body section.max {
     position:fixed;
     top:10%;
-    left: 0%
+    left: 2%
   }
 
   body section.business-analyst{
     position:fixed;
     top:10%;
-    left: 00%
+    left: 2%
   }
 
   body section.mba{
     position:fixed;
     top:10%;
-    left: 00%
+    left: 2%
   }
 
   body section.dev{
       position:fixed;
       top:6%;
-      left: 0%;
+      left: 2%;
       width: 100%
   }
 
@@ -197,6 +174,7 @@ section.dev{
   }
 
 }
+
 
 #indicatorContainer #navGroup >span {
   width:4px;
