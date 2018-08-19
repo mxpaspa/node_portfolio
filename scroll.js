@@ -1,6 +1,5 @@
 window.onload = function() {
   const c=document.getElementById("videoCanvas");
-  const body = document.getElementById("main");
   const ctx=c.getContext("2d");
   const imgArray1 = [];
   const maxFrames1 = 546;
@@ -8,6 +7,9 @@ window.onload = function() {
 
   let imagesLoaded = 0;
   let videoFrame = 0;
+
+  // prevent browser from going into fullscreen mode
+  document.addEventListener("touchmove", function(e) { e.preventDefault() });
 
   //grab frames from directory for first vid
   for(let x = 0; x < maxFrames1; x++) {
@@ -30,7 +32,6 @@ window.onload = function() {
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
-            body.requestFullscreen();
           }
 
           setTimeout(createText, 300);
