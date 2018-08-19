@@ -24,21 +24,19 @@ window.onload = function() {
         // setInterval(function(){
           // document.getElementById("scrollDown").classList.add("visible");
           document.getElementsByClassName("loader-wrapper")[0].classList.add("hidden");
-          function createText (){
 
+          function createText (){
             let scrollText;
             scrollText= document.createElement("div");
             scrollText.id = "scrollDown";
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
-            
+            window.scroll(0, 2000);
+            console.log("force scroll");
           }
 
           setTimeout(createText, 300);
-          // scrollDown();
-
-
         }
         // , 1000);
       init(videoFrame);
