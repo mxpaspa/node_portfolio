@@ -1,3 +1,4 @@
+window.addEventListener("load", function() { window. scrollTo(0, 0); });
 window.onload = function() {
   const c=document.getElementById("videoCanvas");
   const ctx=c.getContext("2d");
