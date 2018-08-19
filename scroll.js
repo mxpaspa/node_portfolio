@@ -1,4 +1,3 @@
-window.addEventListener("load", function() { window. scrollTo(0, 0); });
 window.onload = function() {
   const c=document.getElementById("videoCanvas");
   const ctx=c.getContext("2d");
@@ -9,8 +8,8 @@ window.onload = function() {
   let imagesLoaded = 0;
   let videoFrame = 0;
 
-  // prevent browser from going into fullscreen mode
-  document.addEventListener("touchmove", function(e) { e.preventDefault() });
+  var objDiv = document.getElementById("max");
+  objDiv.scrollTop = objDiv.scrollHeight;
 
   //grab frames from directory for first vid
   for(let x = 0; x < maxFrames1; x++) {
@@ -33,16 +32,19 @@ window.onload = function() {
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
+
           }
 
           setTimeout(createText, 300);
+          // scrollDown();
 
         }
         // , 1000);
       init(videoFrame);
       if(x <= 150){
         setProgress(progress)
-      };
+      }
+
     }
 
       const setProgress = progress => {
@@ -50,6 +52,7 @@ window.onload = function() {
       };
 
     }
+
 
   const init = imageIndex => {
     let img = imgArray1[imageIndex];
@@ -394,3 +397,4 @@ window.onload = function() {
 
   }
 }
+window.scroll(0,300);
