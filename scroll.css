@@ -136,7 +136,7 @@ section.dev{
 
   body {
     background-color: #454545;
-    overflow:auto;
+    overflow:hidden;
     overscroll-behavior-y: none;
 
   }
