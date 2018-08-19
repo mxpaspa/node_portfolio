@@ -32,7 +32,18 @@ window.onload = function() {
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
-            document.addEventListener("touchmove", function(e) { e.preventDefault() });
+
+            var body = document.documentElement;
+            if (body.requestFullscreen) {
+              body.requestFullscreen();
+            } else if (body.webkitrequestFullscreen) {
+              body.webkitrequestFullscreen();
+            } else if (body.mozrequestFullscreen) {
+              body.mozrequestFullscreen();
+            } else if (body.msrequestFullscreen) {
+              body.msrequestFullscreen();
+            }
+
           }
 
           setTimeout(createText, 300);
