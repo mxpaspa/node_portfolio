@@ -46,12 +46,12 @@ em{
 }
 
 #indicatorContainer{
-    position: relative;
+    position: fixed;
     top: 10%;
     right: 2.5%;
     width: 50px;
     bottom: 10%;
-    z-index: 10;
+    /*z-index: 10;*/
     height:80%;
     display: flex;
     flex-direction: column;
@@ -109,41 +109,100 @@ section.dev{
     and (device-width: 375px)
     and (device-height : 667px)
     and (-webkit-device-pixel-ratio : 2) {
+
   #indicatorContainer #navGroup {
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #indicator{
+    background-color: #dccd9e;
+    width: 20px;
+  }
+
+  #indicatorContainer #navGroup >span {
+    width:20px;
+    height:20px;
+  }
+
+  /*#indicatorContainer #navGroup .active {
+    position: absolute;
+    cursor: pointer;
+    background-color:rgba(64,64,64,0.5);
+    transform: scale(2,2);
+    transition: transform 200ms cubic-bezier(0, 0, 0.6, 1.6);
+  }*/
+
+  /*#indicatorContainer #navGroup .reverse {
+    position: absolute;
+    cursor: pointer;
+    background-color:rgba(64,64,64,0.5);
+    transform: scale(0.5,0.5);
+    transition:transform 0.3s ease-out;
+  }*/
+
+  /*#indicatorContainer #navGroup .last{
+    position: absolute;
+    cursor: pointer;
+    background-color:#212121;
+    transform: scale(2,2);
+    transition: transform 200ms cubic-bezier(0, 0, 0.6, 1.6);
+  }*/
+
+  /*#indicatorContainer #navGroup .last-reverse {
+    position: absolute;
+    cursor: pointer;
+    background-color:#212121;
+    transform: scale(0.5,0.5);
+    transition:transform 0.3s ease-out;
+  }*/
+
+  body {
+    background-color: #454545
+  }
+
+  body div.videoWrapper {
+    opacity: 0.5;
+
   }
 
   body section.max {
     position:fixed;
-    top:35%;
-    left: 40%
+    top:10%;
+    left: 0%
   }
 
   body section.business-analyst{
     position:fixed;
-    top:35%;
-    left: 40%
+    top:10%;
+    left: 00%
   }
 
   body section.mba{
     position:fixed;
-    top:35%;
-    left: 40%
+    top:10%;
+    left: 00%
   }
 
   body section.dev{
       position:fixed;
-      top:35%;
-      left: 40%
+      top:6%;
+      left: 0%;
+      width: 100%
   }
+
+  div.section-active {
+    color: white;
+    font-size: 45px;
+  }
+
 }
 
 #indicatorContainer #navGroup >span {
   width:4px;
   height:4px;
   position:absolute;
-  z-index: 2
+  /*z-index: 2*/
 }
 
 #indicatorContainer #navGroup .active {
@@ -192,7 +251,7 @@ section.dev{
 }
 .section-active {
   font-size:30px;
-  /*color: rgba(255,255,255,.7);*/
+
   color: #3B3B3B;
   visibility: visible;
   /*font-family: 'Libre Baskerville', serif;*/
