@@ -1,5 +1,6 @@
 window.onload = function() {
   const c=document.getElementById("videoCanvas");
+  const body = document.getElementById("main");
   const ctx=c.getContext("2d");
   const imgArray1 = [];
   const maxFrames1 = 546;
@@ -29,7 +30,7 @@ window.onload = function() {
             scrollText.innerHTML = "Scroll Down";
             scrollText.classList.add("visible");
             document.getElementById("main").appendChild(scrollText);
-
+            body.requestFullscreen();
           }
 
           setTimeout(createText, 300);
